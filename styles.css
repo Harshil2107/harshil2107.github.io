@@ -134,6 +134,10 @@ ul {
   background-color: white;
   transition: 0.5s ease;
 }
+.projects {
+  margin-left: 4vh;
+  margin-right: 4vh;
+}
 .project-details {
   margin-bottom: 5vh;
 }
