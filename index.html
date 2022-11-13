@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="resetcss" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="nav.js" defer></script>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="logo">Portfolio</div>
+      <button
+        aria-controls="primay-navigation"
+        aria-expanded="false"
+        class="mobile-nav-toggle"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation flex"
+        >
+          <li class="options" onclick="closeMenu()">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="options" onclick="closeMenu()">
+            <a href="#">Projects</a>
+          </li>
+          <li class="options" onclick="closeMenu()">
+            <a href="#">Skills</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="about">
+      <div class="about-block">
+        <h2 class="name">Harshil Patel</h2>
+        <p class="info">
+          <b class="hi">Hi,</b>I am a Computer Science student for the
+          University of California - Davis. Currently a Senior and have intrest
+          in backend development, API, making discord bots and computer vision.
+        </p>
+        <div class="btn-div">
+          <a href="resources/Resume_new.pdf" download="resume">
+            <button class="res-btn">
+              Resume
+              <i class="fa fa-download"></i>
+            </button>
+          </a>
+          <button
+            class="icon-btn"
+            onclick="window.open('https://github.com/Harshil2107','_blank')"
+          >
+            <i class="fa fa-github icon-4x"></i>
+          </button>
+          <button
+            class="icon-btn"
+            onclick="window.open('https://www.linkedin.com/in/harshilpatel2107/','_blank')"
+          >
+            <i class="fa fa-linkedin fa-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
