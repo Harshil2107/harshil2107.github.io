@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +34,8 @@ ul {
   align-content: center;
   justify-content: space-between;
   background: rgb(0, 90, 126);
+  position: fixed;
+  width: 100%;
 }
 .mobile-nav-toggle {
   display: none;
@@ -114,6 +119,7 @@ ul {
 .code-div {
   display: flex;
   justify-content: center;
+
   margin-top: 4vh;
   margin-bottom: 4vh;
 }
@@ -137,6 +143,7 @@ ul {
 .projects {
   margin-left: 4vh;
   margin-right: 4vh;
+  padding-top: 2rem;
 }
 .project-details {
   margin-bottom: 5vh;
@@ -166,6 +173,59 @@ ul {
 }
 .project-img {
   max-width: 600px;
+}
+.project-img-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.education {
+  margin-left: 4vh;
+  margin-right: 4vh;
+  padding-top: 2rem;
+}
+.edu-text {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.edu-title {
+  color: rgb(0, 90, 126);
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.edu-info {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.edu-time {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.edu-info-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(0, 90, 126);
+}
+.edu-info-text {
+  font-size: 24px;
+  color: rgb(0, 90, 126);
+}
+.edu-description {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.code-btn-div {
+  display: flex;
+  gap: 1rem;
 }
 @media screen and (max-width: 700px) {
   .primary-navigation {
@@ -207,5 +267,8 @@ ul {
   }
   .project-description {
     text-align: center;
+  }
+  .code-btn-div {
+    flex-direction: column;
   }
 }

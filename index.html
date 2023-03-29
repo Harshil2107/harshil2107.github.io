@@ -29,28 +29,28 @@
           class="primary-navigation flex"
         >
           <li class="options" onclick="closeMenu()">
-            <a href="index.html#about">About</a>
+            <a href="#about">About</a>
           </li>
           <li class="options" onclick="closeMenu()">
-            <a href="index.html#projects">Projects</a>
+            <a href="#education">Education</a>
           </li>
-          <!-- <li class="options" onclick="closeMenu()">
-            <a href="#">Skills</a>
-          </li> -->
+          <li class="options" onclick="closeMenu()">
+            <a href="#projects">Projects</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <div class="about">
+    <div class="about" id="about">
       <div class="about-block">
         <h2 class="name">Harshil Patel</h2>
         <p class="info">
           <b class="hi">Hi,</b>I am a Computer Science student for the
-          University of California - Davis. Currently a Senior and have intrest
-          in backend development, API, making discord bots and computer vision.
+          University of California - Davis. Currently a Senior and have interest
+          in backend development, API, making discord bots, and computer vision.
         </p>
         <div class="btn-div">
-          <a href="resources/Resume_Harshil_Patel.pdf" download="resume">
+          <a href="resources/Harshil_Patel_Resume.pdf" download="resume">
             <button class="res-btn">
               Resume
               <i class="fa fa-download"></i>
@@ -71,8 +71,140 @@
         </div>
       </div>
     </div>
-    <div class="projects">
+    <div class="education" id="education">
+      <div class="title">Education</div>
+      <div class="edu-block">
+        <div class="edu-details">
+          <div class="edu-title">
+            <div>Bachelor of Science: Computer Science</div>
+            <div class="edu-time">
+              <div class="edu-info-text">Sept 2019</div>
+              <div class="edu-info-text">-</div>
+              <div class="edu-info-text">June 2023</div>
+            </div>
+          </div>
+
+          <div class="edu-text">
+            <div class="edu-description">
+              <div class="edu-info">
+                <div class="edu-info-title">University:</div>
+                <div class="edu-info-text">
+                  University of California - Davis
+                </div>
+              </div>
+              <div class="edu-info">
+                <div class="edu-info-title">GPA:</div>
+                <div class="edu-info-text">3.6</div>
+              </div>
+
+              <div class="edu-info">
+                <div class="edu-info-text">
+                  <b>Relevent Coursework:</b> Operating Systems, Artificial
+                  Intelligence, Web Development, Machine Learning, Software
+                  Development, Object-Oriented Programming, Data structures,
+                  Algorithm Design and Analysis, and Computer Architecture.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
       <div class="title">Projects</div>
+      <div class="project-details">
+        <div class="project-title">gem5 Vision (in progress)</div>
+        <div class="project-text">
+          <div>
+            <img class="project-img" src="resources/gem5_website.png" />
+          </div>
+          <div class="project-description">
+            This project is a group project which is a part of Senior Design
+            Project class. gem5 is a simulation software for computer architects
+            that provides resources like kernels, bootloaders, benchmarks, and
+            disk images. Currently, the resources are stored in a Google Cloud
+            Bucket, making it difficult for users to find what they need. The
+            goal is to categorize the resources, link them with example code,
+            and track analytics using a server. Additional goals include adding
+            a beginners’ section and more information about each resource. To
+            improve resource administration, MongoDB will be integrated into the
+            Python wrapper.
+          </div>
+        </div>
+        <div class="code-div">
+          <div class="code-btn-div">
+            <button
+              class="code-btn"
+              onclick="window.open('https://github.com/Gem5Vision','_blank')"
+            >
+              Code
+            </button>
+            <button
+              class="code-btn"
+              onclick="window.open('https://gem5vision.github.io/gem5-resources-website/','_blank')"
+            >
+              Live Website
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="project-details">
+        <div class="project-title">QuixFolio (in progress)</div>
+        <div class="project-text">
+          <div>
+            <img class="project-img" src="resources/quixfolio.png" />
+          </div>
+          <div class="project-description">
+            QuixFolio is a web application that allows users to create a resumes
+            and portfolios without any coding skills. Users can login via GitHub
+            and select a template and fill in the details. The website will
+            automatically create a GitHub repostiory and deploy the website
+            using GitHub pages. The website is built using React, Next.js, and
+            Tailwind CSS. The website also allows users to update and delete
+            their portfolios easily as well as use their own custom templates,
+            provided they follow our config schema.
+          </div>
+        </div>
+        <div class="code-div">
+          <div class="code-btn-div">
+            <button
+              class="code-btn"
+              onclick="window.open('https://github.com/QuixFolio','_blank')"
+            >
+              Code
+            </button>
+            <button
+              class="code-btn"
+              onclick="window.open('https://quixfolio.vercel.app/','_blank')"
+            >
+              Live Website
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="project-details">
+        <div class="project-title">Lstore Database Implementation</div>
+        <div class="project-text">
+          <div class="project-description">
+            As a part of the Database Systems class, I created a relational
+            database implementing the feature of an Lstore. This Python-based
+            database supports search, insert, update, sum and delete queries. It
+            supports mulitple threads and is able to handle multiple queries at
+            the same time. It writes to disk to ensure data persistance, and
+            uses a BTree to index the data.
+          </div>
+        </div>
+        <div class="code-div">
+          <div>
+            <button
+              class="code-btn"
+              onclick="window.open('https://github.com/wohmas/165A_group','_blank')"
+            >
+              Code
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="project-details">
         <div class="project-title">Valorant Live Bot</div>
         <div class="project-text">
@@ -82,7 +214,7 @@
           <div class="project-description">
             I created a discord bot using Discord API and python. The bot
             provides details about Valorant esports like live matches, live
-            scores, team rankings for every region and todays matches. I
+            scores, team rankings for every region, and today’s matches. I
             collected the data from vlr.gg using web scrapping.
           </div>
         </div>
@@ -96,17 +228,17 @@
         </div>
       </div>
       <div class="project-details">
-        <div class="project-title">OMR Scnner API</div>
+        <div class="project-title">OMR Scanner API</div>
         <div class="project-text">
           <div>
             <img class="project-img" src="resources/omr_res.PNG" />
           </div>
           <div class="project-description">
-            I created an OMR scanner which takes in a photo of an OMR sheet and
+            I created an OMR scanner that takes in a photo of an OMR sheet and
             an answer key and returns the number of correct answers. I used
             OpenCV to process the image and grade it. I also programmed a
-            Restful API using Python and Flask which allows other to send a POST
-            request with answerkey and image and get the grade.
+            Restful API using Python and Flask which allows others to send a
+            POST request with the answer key and image and get the grade.
           </div>
         </div>
         <div class="code-div">
@@ -116,11 +248,12 @@
           >
             Code
           </button>
+        </div>
       </div>
       <div class="project-details">
         <div class="project-title">Unify Course Assitant</div>
         <div class="project-text">
-          <div>
+          <div class="project-img-div">
             <img
               class="project-img"
               src="resources/ezgif.com-gif-maker (1).gif"
@@ -131,16 +264,18 @@
             />
           </div>
           <div class="project-description">
-            I and my friends created Unify as a Hack Davis project and won in a
-            category. Unify allows students to connect with other students with
-            similar classes. Unify was made using Javascript, React, Flask and
-            Python.Unify allows students to add, search and remove classes, see
-            professor ratings, export schedule calender. It also matches
+            Our team created Unify as a Hack Davis project and won in the
+            category of <b>Best Use of Auth0</b>. <br />
+            <br />
+            Unify allows students to connect with other students with similar
+            classes. Unify was made using JavaScript, React, Flask and Python.
+            Unify allows students to add, search and remove classes, see
+            professor ratings, export schedule calendar. It also matches
             students with respect to classes taken and they can connect via
-            discord. We cleated out own APIs by collecting data from the
-            internet using web scrapping.We also created a discord bot using
-            Discord API and Python to allow studets to use same features via
-            discord.
+            discord. We created our own APIs by collecting data from the
+            internet using web scraping. We also created a discord bot using
+            Discord API and Python to allow students to use the same features
+            via discord.
           </div>
         </div>
         <div class="code-div">
@@ -150,6 +285,7 @@
           >
             Code
           </button>
+        </div>
       </div>
       <div class="project-details">
         <div class="project-title">Pathfinding Algorithm Visualizer</div>
@@ -162,9 +298,9 @@
           </div>
           <div class="project-description">
             I created a pathfinding algorithm Visualizer using Python and
-            Pygames. The Visualizer allows user to craete a maze with start and
-            end points and select from A* search, BFS, DFS and Dijkstras
-            algorithm to find the parth between the nodes.
+            Pygame. The Visualizer allows the user to create a maze with start
+            and endpoints and select from A* search, BFS, DFS, and Dijkstra’s
+            algorithm to find the path between the nodes.
           </div>
         </div>
         <div class="code-div">
@@ -174,6 +310,7 @@
           >
             Code
           </button>
+        </div>
       </div>
     </div>
   </body>
